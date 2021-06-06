@@ -1,27 +1,35 @@
-.example {
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: rgb(165, 140, 172);
   color: #424242;
   max-width: 960px;
   padding: 16px;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.gallery {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
 }
 
-.example .background {
-  height: 240px;
-  // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
-  background-size: cover;
-  background-position: center;
+.photo-card {
+  margin: 10px;
+  width: 300px;
+  height: 270px;
+  align-content: space-between;
+  border: 1px solid rgb(58, 58, 107);
+}
+
+.photo-card img {
+  width: inherit;
+  height: 200px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
 }
